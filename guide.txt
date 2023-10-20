@@ -1,0 +1,6 @@
+FILENAME=/root/Downloads/libtensorflow-cpu-linux-x86_64-2.14.0.tar.gz
+wget -q --no-check-certificate https://storage.googleapis.com/tensorflow/libtensorflow/${FILENAME}
+sudo tar -C /home/workspace/dog-classifier/thirdparty/tensorflow -xzf ${FILENAME}
+
+export LIBRARY_PATH=$LIBRARY_PATH:~/root/home/workspace/dog-classifier/thirdparty/tensorflow/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/root/home/workspace/dog-classifier/thirdparty/tensorflow/lib

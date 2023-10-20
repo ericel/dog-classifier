@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>classifierUI</class>
+ <widget class="QMainWindow" name="classifierUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>classifierUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <!-- The DropArea widget is removed here since we're adding it programmatically -->
+   <widget class="QTableWidget" name="results">
+    <column>
+     <property name="text">
+      <string>File</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Prediction</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Status</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DropArea</class>
+   <extends>QWidget</extends>
+   <header location="global">droparea.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

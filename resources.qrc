@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/droparea.png</file>
+        <!-- Add other assets here -->
+    </qresource>
+</RCC>
